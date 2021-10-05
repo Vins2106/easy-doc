@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>easy-doc test</title>
+
+	<link rel="stylesheet" href="./styles.css">
+	<link rel="stylesheet"
+      href="./highlight.css">
+</head>
+<body>
+	
+	<div class="main">
+		<h1 class="title">Welcome to <strong>easy-doc</strong></h1>
+		<p class="description">this help you to get document elements easly</p>
+
+		<hr>
+
+		<p>by typing <pre><code class="language-javascript">getDocById()</code></pre> you can get the element with specify id for easy! (not just id)</p>
+
+		<hr>
+
+		<ul>
+			<li><a href="#documentation">Installation</a></li>
+			<li><a href="#documentation">Documentation</a></li>
+			<li><a href="#example">Example</a></li>
+		</ul>
+
+		<hr>
+
+		<h1 id="installation">Installation</h1>
+		<p>use cdn: <pre><code>https://vins2106.github.io/easy-doc/libs/cdn/v1/index.js</code></pre></p>
+
+		<hr>
+
+		<h1 id="documentation">Documentation</h1>
+		<br>
+		<h2 id="doc-getelementbyid">getDocById()</h2>
+		<p>this help you to get specify element by id.</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: element id</h4>
+			<pre><code class="language-javascript">getDocById(elementid)</code></pre>
+			<h4>return: HTML Object</h4>
+		</p>	
+
+		<hr type="2">
+
+		<h2 id="doc-getqs">getQS()</h2>
+		<p>this help you to get specify element with query selector</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: id, class, tag, etc</h4>
+			<pre><code class="language-javascript">getQS(query)</code></pre>
+			<h4>return: HTML Object</h4>
+		</p>	
+
+		<hr type="2">
+
+		<h2 id="doc-getqs">getQSAll()</h2>
+		<p>this help you to get specify elements with query selector</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: id, class, tag, etc</h4>
+			<pre><code class="language-javascript">getQSAll(query)</code></pre>
+			<h4>return: HTML Node Object</h4>
+		</p>	
+
+		<hr type="2">
+
+		<h2 id="doc-getqs">getDocsByClass()</h2>
+		<p>this help you to get specify elements with class name</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: class name</h4>
+			<pre><code class="language-javascript">getDocsByClass(className)</code></pre>
+			<h4>return: HTML Node Object</h4>
+		</p>		
+
+		<hr type="2">
+
+		<h2 id="doc-getqs">getDocsByName()</h2>
+		<p>this help you to get specify elements with name</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: name</h4>
+			<pre><code class="language-javascript">getDocsByName(name)</code></pre>
+			<h4>return: HTML Node Object</h4>
+		</p>
+
+		<hr type="2">
+
+		<h2 id="doc-getqs">getDocsByTagName(()</h2>
+		<p>this help you to get specify element with tag name</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: tag name</h4>
+			<pre><code class="language-javascript">getDocsByTagName(tagName)</code></pre>
+			<h4>return: HTML Node Object</h4>
+		</p>
+
+		<hr type="2">
+
+		<h2 id="doc-getqs">getDocsByTagNameNS()</h2>
+		<p>this help you to get specify element with query selector</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: name space uri && tag name</h4>
+			<pre><code class="language-javascript">getDocsByTagNameNS(nameSpaceURI, tagName)</code></pre>
+			<h4>return: HTML Node Object</h4>
+		</p>
+
+		<hr>
+
+		<h1 id="example">Example</h1>
+		<p>
+			<pre><code class="language-html">
+&lt!DOCTYPE html&gt
+&lthtml lang="en"&gt
+&lthead&gt
+	&ltmeta charset="UTF-8"&gt
+	&ltmeta name="viewport" content="width=device-width, initial-scale=1.0"&gt
+	&lttitle&gtMy Website&lt/title&gt
+&lt/head&gt
+&ltbody&gt
+	&lt!-- id to add innerHTML --&gt
+	&ltdiv id="demo"&gt&lt/div&gt
+	
+	&lt!-- our cdn --&gt				
+	&ltscript src="https://vins2106.github.io/easy-doc/libs/cdn/v1/index.js"&gt&lt/script&gt
+	&ltscript&gt
+	getDocById("demo").innerHTML = "My website"
+	&lt/script&gt
+&lt/body&gt
+&lt/html&gt
+			</code></pre>
+		</p>			
+
+		<br>
+		<br>
+		<h4 class="footer">Made with LOVE by <a href="https://github.com/Vins2106">Vins 2106</a></h4>
+	</div>
+
+	<script src="./highlight.js"></script>
+	<script>hljs.highlightAll();</script>
+</body>
+</html>
