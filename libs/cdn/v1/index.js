@@ -67,3 +67,15 @@ function addClassTo(element, classes = []) {
 		throw Error(e)
 	}
 }
+
+function removeClassFrom(element, classes = []) {
+	if (!classes[0]) throw Error("Valid class type is JSON")
+
+	try {
+		for (let i = 0; i < classes.length; i++) {
+			element.classList.remove(classes[i])
+		}
+	} catch (e) {
+		throw Error(e)
+	}
+}
