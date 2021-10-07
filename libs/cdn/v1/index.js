@@ -1,4 +1,13 @@
+/*
+	* Make by Vins 2106
+	* github: https://github.com/Vins2106/easy-doc
+*/
+
+// Body
+
 const getBody = document.body;
+
+// Important
 
 // query: ID
 // return: HTML Object
