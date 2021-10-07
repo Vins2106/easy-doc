@@ -152,3 +152,10 @@ function setAttrTo(element, name, value) {
  	return test;
 }
 
+// Utility
+
+// query: MIN, MAX
+// return: Random Number Between [min] - [max]
+function random(min, max) {
+	return Math.floor(Math.random() * (max - min + 1) + min)	
+}

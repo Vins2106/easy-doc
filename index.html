@@ -22,7 +22,7 @@
 	
 	<div class="main">
 		<h1 class="title">Welcome to <strong>easy-doc</strong></h1>
-		<p class="description">this help you to get document elements easly</p>
+		<p class="description">this help you to get document elements easly, there also have some utility function that may help you</p>
 
 		<hr>
 
@@ -51,7 +51,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: element id</h4>
-			<pre><code class="language-javascript">getDocById(elementid)</code></pre>
+			<pre><code class="language-javascript">getDocById("my-id")</code></pre>
 			<h4>return: HTML Object</h4>
 		</p>	
 
@@ -63,7 +63,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: id, class, tag, etc</h4>
-			<pre><code class="language-javascript">getQS(query)</code></pre>
+			<pre><code class="language-javascript">getQS("my-class")</code></pre>
 			<h4>return: HTML Object</h4>
 		</p>	
 
@@ -75,7 +75,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: id, class, tag, etc</h4>
-			<pre><code class="language-javascript">getQSAll(query)</code></pre>
+			<pre><code class="language-javascript">getQSAll("my-class")</code></pre>
 			<h4>return: HTML Node Object</h4>
 		</p>	
 
@@ -87,7 +87,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: class name</h4>
-			<pre><code class="language-javascript">getDocsByClass(className)</code></pre>
+			<pre><code class="language-javascript">getDocsByClass("class-name")</code></pre>
 			<h4>return: HTML Node Object</h4>
 		</p>		
 
@@ -99,7 +99,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: name</h4>
-			<pre><code class="language-javascript">getDocsByName(name)</code></pre>
+			<pre><code class="language-javascript">getDocsByName("a-name")</code></pre>
 			<h4>return: HTML Node Object</h4>
 		</p>
 
@@ -111,7 +111,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: tag name</h4>
-			<pre><code class="language-javascript">getDocsByTagName(tagName)</code></pre>
+			<pre><code class="language-javascript">getDocsByTagName("h1")</code></pre>
 			<h4>return: HTML Node Object</h4>
 		</p>
 
@@ -123,7 +123,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: name space uri && tag name</h4>
-			<pre><code class="language-javascript">getDocsByTagNameNS(nameSpaceURI, tagName)</code></pre>
+			<pre><code class="language-javascript">getDocsByTagNameNS(nameSpaceURI, "h2")</code></pre>
 			<h4>return: HTML Node Object</h4>
 		</p>
 
@@ -159,7 +159,7 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: HTML Object && Attribute Name</h4>
-			<pre><code class="language-javascript">getAttrFrom(element, attributeName)</code></pre>
+			<pre><code class="language-javascript">getAttrFrom(element, "title")</code></pre>
 			<h4>return: Attribute Value</h4>
 		</p>
 
@@ -183,12 +183,25 @@
 		<h3>Usage</h3>
 		<p>
 			<h4>query: HTML Object, Attribute name, Attribute value</h4>
-			<pre><code class="language-javascript">setAttrTo(element, attributeName, AttributeValue)</code></pre>
+			<pre><code class="language-javascript">setAttrTo(element, "title", "this is title")</code></pre>
 			<h4>return: Attribute Value</h4>
 		</p>			
 		<hr>
 
+		<h1 id="utility">Utility functions</h1>
+		<br>
+		<h2>random()</h2>
+		<p>this will generate random number between [min] - [max]</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: MIN, MAX</h4>
+			<pre><code class="language-javascript">random(1, 10)</code></pre>
+			<h4>return: random number between [min] - [max]</h4>
+		</p>
+
 		<h1 id="example">Example</h1>
+		<br>
 		<p>
 			<pre><code class="language-html">
 &lt!DOCTYPE html&gt
