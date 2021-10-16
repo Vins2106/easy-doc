@@ -161,10 +161,90 @@ function setAttrTo(element, name, value) {
  	return test;
 }
 
+// query: HTML Object, DISPLAYTYPE
+// return: Display Type
+function show(element, display = "block"){
+	if(!element) throw Error("Need HTML Object");
+	if (!display) display = "block"
+
+	element.style.display = `${display}`;
+
+	return `${display}`
+}
+
+// query: HTML Object
+// return: Display Type
+function hide(element){
+	if(!element) throw Error("Need HTML Object");
+
+	element.style.display = `none`;
+
+	return `none`
+}
+
+// query: HTML Object, Seconds, DISPLAYTYPE
+// return: String, Type
+function showAfter(element, seconds, display = "block"){
+	if (!element) throw Error("Need HTML Object");
+	if (!display) display = "block";
+	if (!seconds) throw Error("Need Seconds");
+	if (typeof seconds !== "number") throw Error("Seconds must be a number");
+	if (seconds <= 0) seconds = "noSeconds";
+
+	if (seconds === "noSeconds") {
+		element.style.display = display;
+
+		return display;
+	}
+
+	console.log(`[EASY-DOC] element will show after ${seconds} seconds`);
+
+	setTimeout(() => {
+		element.style.display = display;
+
+		return display;
+	}, seconds * 1000)
+}
+
+// query: HTML Object, Seconds
+// return: String
+function hideAfter(element, seconds){
+	if (!element) throw Error("Need HTML Object");
+	if (!seconds) throw Error("Need Seconds");
+	if (typeof seconds !== "number") throw Error("Seconds must be a number");
+	if (seconds <= 0) seconds = "noSeconds";
+
+	if (seconds === "noSeconds") {
+		element.style.display = "none";
+
+		return display;
+	}
+
+	console.log(`[EASY-DOC] element will hide after ${seconds} seconds`);
+
+	setTimeout(() => {
+		element.style.display = "none";
+
+		return "none";
+	}, seconds * 1000)
+}
+
 // Utility
 
 // query: MIN, MAX
 // return: Random Number Between [min] - [max]
 function random(min, max) {
 	return Math.floor(Math.random() * (max - min + 1) + min)	
+}
+
+// query: None
+// return: None
+function scrollTop() {
+	return scrollTo(0, -getBody.srollHeight)
+}
+
+// query: None
+// return: None
+function scrollBottom() {
+	return scrollTo(0, getBody.scrollHeight)
 }

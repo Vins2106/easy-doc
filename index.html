@@ -26,7 +26,7 @@
 
 		<hr>
 
-		<p>by typing <pre><code class="language-javascript">getDocById()</code></pre> you can get the element with specify id for easy! (not just id)</p>
+		<p>current version: <pre><code>v1.4.0</code></pre></p>
 
 		<hr>
 
@@ -179,14 +179,62 @@
 		<hr type="2">
 
 		<h2 id="doc-addclassto">setAttrTo()</h2>
-		<p>this help you to set a attribute to a element/p>
+		<p>this help you to set a attribute to a element</p>
 		<br>
 		<h3>Usage</h3>
 		<p>
 			<h4>query: HTML Object, Attribute name, Attribute value</h4>
 			<pre><code class="language-javascript">setAttrTo(element, "title", "this is title")</code></pre>
 			<h4>return: Attribute Value</h4>
-		</p>			
+		</p>
+
+		<hr type="2">
+
+		<h2 id="doc-addclassto">show()</h2>
+		<p>this will show a element</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: HTML Object, Display Type</h4>
+			<pre><code class="language-javascript">show(element, "flex")</code></pre>
+			<h4>return: Display Type</h4>
+		</p>	
+
+		<hr type="2">
+
+		<h2 id="doc-addclassto">showAfter()</h2>
+		<p>this will show a element after seconds</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: HTML Object, Seconds, Display Type</h4>
+			<pre><code class="language-javascript">showAfter(element, 5, "flex")</code></pre>
+			<h4>return: String && Display Type</h4>
+		</p>	
+
+		<hr type="2">
+
+		<h2 id="doc-addclassto">hide()</h2>
+		<p>this hide a element</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: HTML Object</h4>
+			<pre><code class="language-javascript">hide(element)</code></pre>
+			<h4>return: Display Type</h4>
+		</p>
+
+		<hr type="2">
+
+		<h2 id="doc-addclassto">hideAfter()</h2>
+		<p>this hide a element after seconds</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: HTML Object, Seconds</h4>
+			<pre><code class="language-javascript">hideAfter(element, 5)</code></pre>
+			<h4>return: Display Type</h4>
+		</p>									
 		<hr>
 
 		<h1 id="utility">Utility functions</h1>
@@ -199,7 +247,31 @@
 			<h4>query: MIN, MAX</h4>
 			<pre><code class="language-javascript">random(1, 10)</code></pre>
 			<h4>return: random number between [min] - [max]</h4>
+		</p>	
+		
+		<hr type="2">	
+
+		<h2>scrollTop()</h2>
+		<p>this will scroll the web page to top</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: None</h4>
+			<pre><code class="language-javascript">scrollTop()</code></pre>
+			<h4>return: None</h4>
 		</p>
+		
+		<hr type="2">	
+
+		<h2>scrollBottom()</h2>
+		<p>this will scroll the web page to bottom</p>
+		<br>
+		<h3>Usage</h3>
+		<p>
+			<h4>query: None</h4>
+			<pre><code class="language-javascript">scrollBottom()</code></pre>
+			<h4>return: None</h4>
+		</p>				
 
 		<h1 id="example">Example</h1>
 		<br>
