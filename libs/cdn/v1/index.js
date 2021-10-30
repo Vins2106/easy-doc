@@ -248,3 +248,12 @@ function scrollTop() {
 function scrollBottom() {
 	return scrollTo(0, getBody.scrollHeight)
 }
+
+// query: Text
+// return: String
+function copyText(str) {
+	navigator.clipboard.writeText(str);
+
+	return str;
+}
+
